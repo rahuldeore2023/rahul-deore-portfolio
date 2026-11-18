@@ -1,13 +1,9 @@
-name: CI/CD & Production Deployment
+name: Build & Deploy Portfolio (main)
 
 on:
   push:
     branches:
       - main
-      - dev
-      - sit
-      - uat
-      - prod
   workflow_dispatch:
 
 permissions:
@@ -15,13 +11,14 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
   verify_and_build:
     name: Verify, Export PDF & Build Web
     runs-on: ubuntu-latest
-    concurrency:
-      group: ci-${{ github.ref }}
-      cancel-in-progress: ${{ github.ref != 'refs/heads/prod' }}
 
     steps:
       - name: Checkout repository
@@ -51,7 +48,6 @@ jobs:
         run: flutter test tool/export_ats_pdf.dart
 
       - name: Compute GitHub Pages BASE_HREF
-        id: base_href
         shell: bash
         run: |
           set -euo pipefail
@@ -67,7 +63,6 @@ jobs:
           fi
 
           echo "BASE_HREF=${BASE_HREF}" >> "$GITHUB_ENV"
-          echo "Detected repository: ${GITHUB_REPOSITORY}"
           echo "Computed Flutter Web BASE_HREF: ${BASE_HREF}"
 
       - name: Build Flutter Web (release)
@@ -87,34 +82,18 @@ jobs:
           test -s portfolio_website/resume-builder/index.html
           echo "Bundle verified: portfolio_website/ ready with latest PDF and Flutter Web app."
 
-      - name: Upload SIT/UAT preview artifact
-        if: github.ref == 'refs/heads/sit' || github.ref == 'refs/heads/uat'
-        uses: actions/upload-artifact@v4
-        with:
-          name: portfolio-preview-${{ github.ref_name }}
-          path: portfolio_website
-          retention-days: 14
-
       - name: Configure GitHub Pages
-        if: github.ref == 'refs/heads/prod' || github.event_name == 'workflow_dispatch'
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Upload GitHub Pages artifact
-        if: github.ref == 'refs/heads/prod' || github.event_name == 'workflow_dispatch'
         uses: actions/upload-pages-artifact@v3
         with:
           path: portfolio_website
 
   deploy_production:
-    name: Deploy to GitHub Pages (Production)
+    name: Deploy to GitHub Pages
     needs: verify_and_build
-    if: github.ref == 'refs/heads/prod' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
-    concurrency:
-      group: pages
-      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
