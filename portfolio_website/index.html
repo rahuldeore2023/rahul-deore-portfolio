@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rahul Deore — Senior Mobile App Developer (Flutter &amp; Android)</title>
+  <meta
+    name="description"
+    content="Portfolio of Rahul Deore, Senior Mobile App Developer with 7+ years of experience building scalable Flutter and Android (Kotlin, Java) applications, Clean Architecture, BLoC, Riverpod, and multi-environment production releases."
+  />
+  <meta property="og:title" content="Rahul Deore — Senior Mobile App Developer" />
+  <meta
+    property="og:description"
+    content="7+ years building high-performance Flutter & Android apps across FinTech and Enterprise domains."
+  />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="site-header" id="top">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="Rahul Deore Home">
+        <span class="brand-mark">RD</span>
+        <span class="brand-text">Rahul Deore</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="resume-builder/" class="nav-pill">Resume Builder ↗</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button
+          class="icon-btn"
+          id="themeToggle"
+          type="button"
+          aria-label="Toggle light and dark theme"
+          title="Toggle theme"
+        >
+          <span class="theme-icon" id="themeIcon">☀️</span>
+        </button>
+        <button
+          class="icon-btn mobile-menu-btn"
+          id="mobileMenuBtn"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="about">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            Available for Senior Mobile &amp; Lead Roles • Mumbai, India
+          </div>
+          <h1>
+            Hi, I'm <span class="gradient-text">Rahul Deore</span>
+          </h1>
+          <p class="hero-subtitle">
+            Senior Mobile App Developer &nbsp;|&nbsp; Flutter &amp; Android (Kotlin, Java)
+          </p>
+          <p class="hero-description">
+            Mobile Application Developer with <strong>7+ years of experience</strong> designing,
+            building, and scaling production Android and cross-platform Flutter applications
+            (Android, iOS, Web). Specialized in Clean Architecture, MVVM, BLoC, and Riverpod, with
+            hands-on ownership of mobile security, performance tuning, CI/CD pipelines, and
+            end-to-end releases across <strong>Dev, SIT, UAT, and Production</strong>.
+          </p>
+
+          <div class="hero-cta">
+            <a
+              href="assets/Rahul_Deore_ATS_Resume.pdf"
+              download="Rahul_Deore_ATS_Resume.pdf"
+              class="btn btn-primary"
+            >
+              ⬇ Download ATS Resume (PDF)
+            </a>
+            <a href="resume-builder/" class="btn btn-secondary">
+              ⚡ Open ATS Resume Builder App
+            </a>
+            <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+          </div>
+
+          <div class="hero-links">
+            <a
+              href="https://www.linkedin.com/in/rahul-deore-a39800193/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-chip"
+            >
+              LinkedIn ↗
+            </a>
+            <button
+              type="button"
+              class="social-chip copy-trigger"
+              data-copy="rahuldeore.flutter.2024@gmail.com"
+            >
+              ✉ rahuldeore.flutter.2024@gmail.com
+            </button>
+            <button
+              type="button"
+              class="social-chip copy-trigger"
+              data-copy="+91 96236 14907"
+            >
+              ☎ +91 96236 14907
+            </button>
+          </div>
+        </div>
+
+        <aside class="hero-metrics" aria-label="Career Highlights">
+          <div class="metric-card">
+            <span class="metric-value">7+</span>
+            <span class="metric-label">Years Experience</span>
+            <p class="metric-note">Android (Kotlin/Java) &amp; Flutter (Android, iOS, Web)</p>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">4 Envs</span>
+            <span class="metric-label">Release Ownership</span>
+            <p class="metric-note">End-to-end Dev → SIT → UAT → Production rollouts</p>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">25%</span>
+            <span class="metric-label">Faster App Startup</span>
+            <p class="metric-note">Reduced cold load time via startup &amp; render tuning</p>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">4 Devs</span>
+            <span class="metric-label">Team Mentorship</span>
+            <p class="metric-note">Code reviews, Clean Architecture &amp; sprint delivery</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Capabilities</span>
+          <h2>Technical Skills</h2>
+          <p>Production-tested mobile engineering stack across architecture, state, security, and release delivery.</p>
+        </div>
+
+        <div class="filter-bar" role="tablist" aria-label="Filter skills by category">
+          <button type="button" class="filter-btn active" data-filter="all">All</button>
+          <button type="button" class="filter-btn" data-filter="languages">Languages</button>
+          <button type="button" class="filter-btn" data-filter="frameworks">Frameworks</button>
+          <button type="button" class="filter-btn" data-filter="architecture">Architecture</button>
+          <button type="button" class="filter-btn" data-filter="backend">Backend &amp; Storage</button>
+          <button type="button" class="filter-btn" data-filter="devops">Tools &amp; DevOps</button>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <article class="skill-card" data-category="languages">
+            <h3>Languages</h3>
+            <div class="chip-list">
+              <span class="chip">Kotlin</span>
+              <span class="chip">Java</span>
+              <span class="chip">Dart</span>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="frameworks">
+            <h3>Frameworks &amp; Platforms</h3>
+            <div class="chip-list">
+              <span class="chip">Flutter (Android, iOS, Web)</span>
+              <span class="chip">Android SDK</span>
+              <span class="chip">FlutterFlow</span>
+              <span class="chip">Material Design</span>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="architecture">
+            <h3>Architecture &amp; State Management</h3>
+            <div class="chip-list">
+              <span class="chip">Clean Architecture</span>
+              <span class="chip">MVVM</span>
+              <span class="chip">SOLID Principles</span>
+              <span class="chip">BLoC</span>
+              <span class="chip">Riverpod</span>
+              <span class="chip">ViewModel</span>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="backend">
+            <h3>Networking, Backend &amp; Storage</h3>
+            <div class="chip-list">
+              <span class="chip">REST APIs</span>
+              <span class="chip">GraphQL</span>
+              <span class="chip">Firebase</span>
+              <span class="chip">Cloud Firestore</span>
+              <span class="chip">FCM</span>
+              <span class="chip">SQLite</span>
+              <span class="chip">Hive</span>
+              <span class="chip">JSON</span>
+              <span class="chip">XML</span>
+            </div>
+          </article>
+
+          <article class="skill-card skill-card-wide" data-category="devops">
+            <h3>Tools, Security &amp; Release Management</h3>
+            <div class="chip-list">
+              <span class="chip">Release Management (Dev, SIT, UAT, Production)</span>
+              <span class="chip">CI/CD Pipelines</span>
+              <span class="chip">Microsoft Azure</span>
+              <span class="chip">Android Studio</span>
+              <span class="chip">Xcode</span>
+              <span class="chip">Gradle</span>
+              <span class="chip">CocoaPods</span>
+              <span class="chip">Git</span>
+              <span class="chip">ProGuard</span>
+              <span class="chip">SSL Pinning</span>
+              <span class="chip">AES-256 Encryption</span>
+              <span class="chip">Unit Testing</span>
+              <span class="chip">Agile / Scrum</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Career Journey</span>
+          <h2>Work Experience</h2>
+          <p>7+ years delivering enterprise banking, fintech, and cross-platform mobile applications.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>Flutter &amp; Android Developer</h3>
+                  <p class="company-line">Idealake Technologies &nbsp;•&nbsp; Mumbai, India</p>
+                </div>
+                <span class="date-badge current">Jul 2025 – Present</span>
+              </div>
+              <ul class="bullet-list">
+                <li>Architected scalable enterprise mobile solutions in Flutter and FlutterFlow using Bedrock multi-layer architecture (L1, L2, L3) and modular custom components.</li>
+                <li>Owned end-to-end code deployment and release promotion across 4 environments (Dev, SIT, UAT, Production), ensuring reliable production rollouts.</li>
+                <li>Coordinated environment-specific build configurations, release sign-offs, and defect resolution with QA, DevOps, and stakeholders across SIT and UAT cycles.</li>
+                <li>Led peer code reviews and mentored 4 developers on Clean Architecture, code quality standards, and sprint delivery.</li>
+                <li>Collaborated directly with enterprise clients to translate complex business requirements into maintainable, on-time production releases.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>Flutter &amp; Android Developer</h3>
+                  <p class="company-line">Tecplix Technologies &nbsp;•&nbsp; Mumbai, India</p>
+                </div>
+                <span class="date-badge">Nov 2024 – May 2025</span>
+              </div>
+              <ul class="bullet-list">
+                <li>Migrated and refactored legacy Native Android (Java) codebase into modular Clean Architecture, improving maintainability.</li>
+                <li>Revamped core UI screens with Material Design and responsive components to improve usability across device sizes.</li>
+                <li>Implemented structured local caching and modular REST API integration layers for reliable offline support and maintainability.</li>
+                <li>Hardened application security and performance with ProGuard obfuscation, SSL pinning, and encrypted local storage.</li>
+                <li>Implemented CI pipelines in an Agile cross-functional team to automate builds and accelerate release cycles.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>Senior Software Engineer</h3>
+                  <p class="company-line">Reflections Info Systems &nbsp;•&nbsp; Pune, India</p>
+                </div>
+                <span class="date-badge">Jul 2022 – Nov 2024</span>
+              </div>
+              <ul class="bullet-list">
+                <li>Developed and maintained production cross-platform mobile apps using Flutter and Native Android.</li>
+                <li>Implemented MVVM with ViewModel for Android modules and BLoC state management for Flutter apps.</li>
+                <li>Optimized app startup and rendering pipelines, reducing cold app load time by 25%.</li>
+                <li>Mentored junior engineers on unit testing, architecture patterns, and clean code best practices.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>Software Developer</h3>
+                  <p class="company-line">Aurus &nbsp;•&nbsp; Pune, India</p>
+                </div>
+                <span class="date-badge">Mar 2020 – Jul 2022</span>
+              </div>
+              <ul class="bullet-list">
+                <li>Engineered scalable Flutter applications across fintech and enterprise domains with focus on smooth UX.</li>
+                <li>Implemented predictable state management using BLoC and Riverpod for testable, modular codebases.</li>
+                <li>Integrated Firebase Realtime Database, Cloud Firestore, and Cloud Storage for live data synchronization.</li>
+                <li>Led Agile sprint planning with product stakeholders to scope technical milestones and deliver releases on schedule.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>Application Developer</h3>
+                  <p class="company-line">Code Tentacles &nbsp;•&nbsp; Pune, India</p>
+                </div>
+                <span class="date-badge">Dec 2018 – Feb 2020</span>
+              </div>
+              <ul class="bullet-list">
+                <li>Built and maintained multi-domain mobile applications in Flutter with reusable custom widget libraries.</li>
+                <li>Integrated REST APIs for seamless bidirectional data synchronization between mobile clients and backend services.</li>
+                <li>Authored unit tests and participated in peer code reviews to uphold release stability.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Selected Work</span>
+          <h2>Featured Projects</h2>
+          <p>Production banking, enterprise safety, and open-source Flutter applications.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-tag">FinTech • Banking</span>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.finopaymentbank.mobile"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                Play Store ↗
+              </a>
+            </div>
+            <h3>FinoPay — Digital Banking Application</h3>
+            <p class="project-desc">
+              Secure mobile banking application supporting UPI payments, CASA wallets, bill
+              payments, mobile recharges, and regulated KYC / cKYC customer onboarding flows with
+              AES-256 encryption and offline persistence.
+            </p>
+            <div class="chip-list">
+              <span class="chip">Android</span>
+              <span class="chip">Flutter</span>
+              <span class="chip">SQLite</span>
+              <span class="chip">FCM</span>
+              <span class="chip">UPI</span>
+              <span class="chip">AES-256</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-tag">Enterprise • EHS</span>
+              <span class="project-meta">Android &amp; iOS</span>
+            </div>
+            <h3>Pidilite EHS — Incident Reporting App</h3>
+            <p class="project-desc">
+              Cross-platform Flutter mobile experience replacing a friction-heavy web login portal,
+              streamlining field Environment, Health &amp; Safety incident submission with Microsoft
+              Azure backend integration.
+            </p>
+            <div class="chip-list">
+              <span class="chip">Flutter</span>
+              <span class="chip">Dart</span>
+              <span class="chip">Android</span>
+              <span class="chip">iOS</span>
+              <span class="chip">Microsoft Azure</span>
+              <span class="chip">Xcode</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card-accent">
+            <div class="project-top">
+              <span class="project-tag">Interactive Web App</span>
+              <a href="resume-builder/" class="project-link">Launch App ↗</a>
+            </div>
+            <h3>ATS Resume Builder (Flutter + Riverpod)</h3>
+            <p class="project-desc">
+              Clean-architecture Flutter application powered by Riverpod 3 with a live 0–100 ATS
+              compatibility engine, real-time single-column vector PDF generation, and JSON
+              import/export backup.
+            </p>
+            <div class="chip-list">
+              <span class="chip">Flutter Web</span>
+              <span class="chip">Riverpod 3</span>
+              <span class="chip">Clean Architecture</span>
+              <span class="chip">Vector PDF</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Academic Background</span>
+          <h2>Education</h2>
+        </div>
+
+        <div class="education-grid">
+          <article class="edu-card">
+            <span class="date-badge">2018</span>
+            <h3>M.Sc. in Computer Science</h3>
+            <p>Dr. D Y Patil ACS College &nbsp;•&nbsp; Pune, India</p>
+          </article>
+
+          <article class="edu-card">
+            <span class="date-badge">2016</span>
+            <h3>B.Sc. in Computer Science</h3>
+            <p>K V N Naik College &nbsp;•&nbsp; Nashik, India</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-banner">
+          <div>
+            <span class="eyebrow">Let's Connect</span>
+            <h2>Looking for a Senior Flutter &amp; Android Developer?</h2>
+            <p>
+              Open to Senior Mobile Developer and Technical Lead opportunities in Mumbai, Pune, or
+              remote engineering teams.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a
+              href="mailto:rahuldeore.flutter.2024@gmail.com"
+              class="btn btn-primary"
+            >
+              ✉ Email Rahul
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rahul-deore-a39800193/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              LinkedIn Profile ↗
+            </a>
+            <a
+              href="assets/Rahul_Deore_ATS_Resume.pdf"
+              download="Rahul_Deore_ATS_Resume.pdf"
+              class="btn btn-ghost"
+            >
+              ⬇ Download PDF Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="currentYear"></span> Rahul Deore. Built with clean HTML, CSS &amp; Flutter Web.</p>
+      <div class="footer-links">
+        <a href="#top">Back to top ↑</a>
+        <a href="resume-builder/">ATS Resume Builder</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+# Flutter & Dart build artifacts (rebuilt automatically in CI/CD)
+ats_resume_builder/.dart_tool/
+ats_resume_builder/.flutter-plugins
+ats_resume_builder/.flutter-plugins-dependencies
+ats_resume_builder/build/
+ats_resume_builder/.packages
+ats_resume_builder/windows/flutter/ephemeral/
+ats_resume_builder/linux/flutter/ephemeral/
+ats_resume_builder/macos/Flutter/ephemeral/
+ats_resume_builder/ios/Flutter/ephemeral/
+
+# IDE & OS files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Local preview helper & logs
+*.log
