@@ -23,7 +23,7 @@ class SampleResumeData {
         portfolioOrGithubUrl: '',
       ),
       summary:
-          'Senior Mobile Application Developer with 7+ years of experience designing, building, and '
+          'Senior Mobile Application Developer with 8+ years of experience designing, building, and '
           'scaling production Android (Kotlin, Java) and Flutter (Android, iOS, Web) applications. '
           'Specialized in Clean Architecture, MVVM, BLoC, and Riverpod state management, with hands-on '
           'ownership of mobile security, performance optimization, CI/CD automation, end-to-end '
